@@ -4,6 +4,7 @@ import Education from './education';
 import Bachelor from './bachelor';
 import Experience from './experience';
 import Skills from './Skills';
+import pic from './pic.png';
 class Resume extends Component {
     render(){
         return(
@@ -11,7 +12,7 @@ class Resume extends Component {
                 <Grid>
                     <Cell col={4}>
                         <div style={{textAlign: 'center'}}>
-                            < img style={{height:'200px'}}alt='avatar' src='https://cdn.iconscout.com/icon/free/png-256/avatar-372-456324.png'/>
+                            < img  className = "borderr" style={{height:'200px',}}alt='avatar' src={pic}/>
                         </div>    
                         <div>
                             <h2 style={{paddingTop:'.5em'}}> Waqar Hassan</h2>
@@ -54,8 +55,8 @@ class Resume extends Component {
                             progress={80}
                         />
                         <Skills 
-                            skill="C#"
-                            progress={40}
+                            skill="TypeScript"
+                            progress={60}
                         />
                         <Skills 
                             skill="VUE.JS"
@@ -63,7 +64,7 @@ class Resume extends Component {
                         />
                         <Skills 
                             skill=".NET"
-                            progress={65}
+                            progress={40}
                         />
                     </Cell>
                 </Grid>

@@ -26,16 +26,17 @@ class LandingPage extends Component {
                     <Cell col={12}>
                      
                      
-                        <img  
+                     {/*   <img  
                             src="https://cdn.iconscout.com/icon/free/png-256/avatar-372-456324.png"
                             alt="avt" className="avatar"
-                         /> 
+                         /> */} 
+                         
                             <div className="developer">
                             <Particles className="particles"
                             params={particlesOption} />
                                 <h1>Full Stack Developer</h1>
                                 <hr/>
-                                <p>HTML | CSS | Bootstrap    | JavaScript | React | VueJS  | NodeJs | Express</p>
+                                <p>HTML | CSS | Bootstrap    | JavaScript| TypeScript | React | VueJS  | NodeJs | Express </p>
                                 
                                 <div className="social">
                                     {/*linkedin icon */}
