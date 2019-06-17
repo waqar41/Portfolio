@@ -8,13 +8,25 @@ class Projects extends Component {
     //  open new tab for Face detect website
     handleClick = () => {
         return(
-         window.open('https://github.com/waqar41/Website-detect-face-images')
+         window.open('https://github.com/waqar41/facerecognition')
+        );
+    }
+    // live demonstration
+    handleWeb = () => {
+        return(
+         window.open('https://morning-headland-13154.herokuapp.com/')
         );
     }
     // open tab for robofriends app
     handleClick2 = () => {
         return(
-         window.open('https://github.com/waqar41/robofrients2')
+         window.open('https://github.com/waqar41/robofriends2')
+        );
+    }
+    //live demonstration of robofriends APP
+    handleRobo = () => {
+        return(
+         window.open('https://waqar41.github.io/robofriends2/')
         );
     }
      // open tab for VUE project
@@ -42,7 +54,7 @@ class Projects extends Component {
                    <strong>Technologies Used</strong> #React #NodeJS #ExpressJS #PostgresSql #HTML #CSS</CardText>
                 <CardActions border>
                 <Button colored onClick={this.handleClick}>GitHub</Button>
-                <Button colored>Live Demonstration</Button>
+                <Button colored onClick={this.handleWeb} >Live Demonstration</Button>
                 </CardActions >
                </Card>
                 {/*project 2 */}
@@ -52,7 +64,7 @@ class Projects extends Component {
                    to search the robots by name. <strong>Technologies used:</strong>  #React #HTML #CSS #Javascript</CardText>
                 <CardActions border>
                 <Button colored onClick={this.handleClick2}>GitHub</Button>
-                <Button colored>Live Demonstration</Button>
+                <Button colored onClick={this.handleRobo}>Live Demonstration</Button>
                 </CardActions >
                </Card>
                {/*project 3 */}

@@ -12,8 +12,7 @@ class AllComponents extends Component {
     <Layout>
         <Header className="header-color" title={<Link style={{textDecoration:'none', color:'white'}} to="/" >Home </Link>} scroll>
             <Navigation  >
-                <Link className="hover-effect" to="/Resume">Resume</Link>
-                <Link to="/AboutMe">About</Link>
+                <Link className="hover-effect" to="/Resume">Resume</Link> 
                 <Link to="/Projects">Projects</Link>
                 <Link to="/Contact">Contact</Link>
             </Navigation>
@@ -21,7 +20,6 @@ class AllComponents extends Component {
         <Drawer title="MyPortfolio">
             <Navigation>
                 <Link to="/Resume">Resume</Link>
-                <Link to="/AboutMe">About</Link>
                 <Link to="/Projects">Projects</Link>
                 <Link to="/Contact">Contact</Link>
             </Navigation>
