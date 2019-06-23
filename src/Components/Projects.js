@@ -41,6 +41,19 @@ class Projects extends Component {
          window.open('https://github.com/waqar41/Chat-Application-Using-WebSockets')
         );
     }
+    //   **open tab for HTml/css**
+    
+    handleClick4 = () => {
+        return(
+         window.open('https://github.com/waqar41/Alien-Gang')
+        );
+    }
+    // ** live demonstration of HTML/CSS website
+    handleAlien = () => {
+        return(
+            window.open('http://alien-gang.surge.sh/')
+        );
+    }
     //Toggle Categories Function
    toggleCategories = () =>{
        if(this.state.activeTab === 0){
@@ -99,6 +112,21 @@ class Projects extends Component {
                </Card></div>
            )
        }
+       else if (this.state.activeTab === 3){
+        return(
+         <div   style={{ display:'flex', alignItems:'center'}}>
+         {/*project 1 */}
+         <Card shadow={0} style={{minwidth:'550', margin:'auto'}}>
+         <CardTitle style={{color:'#fff', height:'176px', background:'url(https://www.platekompaniet.no/globalassets/imported-images/bok/_9781118008188.jpg?preset=ProductPage'}}>HTML/CSS/JS</CardTitle>
+             <CardText > This website is made using the HTML and CSS</CardText>
+          <CardActions border>
+          <Button colored onClick={this.handleClick4}>GitHub</Button>
+          <Button colored onClick={this.handleAlien} >Live Demonstration</Button>
+          </CardActions >
+         </Card>
+         </div>
+        )
+       }
    }
     render(){
         return(
@@ -107,6 +135,7 @@ class Projects extends Component {
                 <Tab>React</Tab>
                 <Tab>VUEJS</Tab>
                 <Tab>Web-Sockets</Tab>
+                <Tab>HTML/CSS</Tab>
             </Tabs>
             <section  >
                 <Grid >
