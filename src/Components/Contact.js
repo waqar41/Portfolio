@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Grid,Cell,List,ListItem,ListItemContent} from 'react-mdl';
+import pic from './pic.png';
 class Contacts extends Component {
     render(){
         return(
@@ -7,7 +8,7 @@ class Contacts extends Component {
                 <Grid className="grid-content">
                 <Cell col={6}>
                     <h2>Waqar Hassan</h2>
-                    <img style={{height:'230px'}}alt="avatar" src="https://cdn.iconscout.com/icon/free/png-256/avatar-372-456324.png" />
+                    <img className="radius"style={{height:'230px', }}alt="avatar" src={pic} />
                     <p style={{width:'75%', margin:'auto', paddingTop:'1em'}}>Full stack web developer with a vast array of knowledge in many
                         different front end and back end languages, responsive frameworks,
                         databases and best code practices. Passion for designing, developing,
